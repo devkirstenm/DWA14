@@ -5,7 +5,6 @@
     * c) LitElement module: the base class provided by Lit, which extends the standard HTMLElement and provides additional features to create reusable web components
  */
 import {html, render} from 'https://unpkg.com/lit-html?module';
-
 /** CREATING A CUSTOM ELEMENT:
  * We only need one custom element which represents the entire Tally App
  * Think of a custom element as a self-contained component that has its own HTML structure, behaviour and styling
@@ -22,7 +21,6 @@ import {html, render} from 'https://unpkg.com/lit-html?module';
  */
 
 class TallyApp extends LitElement {
-
     /** ADDING CSS STYLING
      * This defines the css styles for the TallyApp component
      * so that you can write it directly in JS.
@@ -31,13 +29,12 @@ class TallyApp extends LitElement {
      */
     static styles = css`
     .counter {
-        font-size: 24px;
+        font-size: 30px;
         margin-bottom: 10px;
     }
     
     .status {
-        color: red;
-        font-style: italic
+        color: black;
     }
     `;
 
