@@ -6,6 +6,14 @@ For this project, we were required to do build a Tally App using the Lit Framewo
 Lit helps developers build fast, lightweight web components.
 
 ## Application 📱
+Created a single web component called 'TallyApp' which extends the 'LitElement' base class provided by Lit and includes the following functionality:
+- The app displays a counter and a status message.
+- Clicking the "Increment" button increments the counter by 1.
+- Clicking the "Decrement" button decrements the counter by 1.
+- The status message changes based on the count value:
+    - When the count is 0, the status is "Normal".
+    - When the count is less than 0, the status is "Minimum Count Reached".
+    - When the count is greater than 15, the status is "Maximum Count Reached".
 
 
 ## User Stories 📝
