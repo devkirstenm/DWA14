@@ -7,24 +7,18 @@ Lit helps developers build fast, lightweight web components.
 
 ## Application 📱
 Created a single web component called 'TallyApp' which extends the 'LitElement' base class provided by Lit and includes the following functionality:
-- The app displays a counter and a status message.
+- The app displays a counter
 - Clicking the "Increment" button increments the counter by 1.
 - Clicking the "Decrement" button decrements the counter by 1.
-- The status message changes based on the count value:
-    - When the count is 0, the status is "Normal".
-    - When the count is less than 0, the status is "Minimum Count Reached".
-    - When the count is greater than 15, the status is "Maximum Count Reached".
-
 
 ## User Stories 📝
 
 The user stories for this application, written in Gherkin syntax, are as follows:
 
-1. **Increment the counter by one** 🔢
-
-   - Given no interactions have been performed yet
-   - When the "getState" method is run and logged to the console
-   - Then the state should show a count of 0
+1. **Display the counter in normal state** 🔢
+- Given no interactions have been performed yet
+- When the application is loaded or reloaded
+- Then the state should display the normal counter value of 0
 
 2. **Increment the counter by one** 🔢
 
@@ -38,12 +32,6 @@ The user stories for this application, written in Gherkin syntax, are as follows
    - Given the current count in the state is 2
    - When a "SUBTRACT" action is dispatched
    - Then the state should display a count of 1
-
-4. **Resetting the Tally Counter** 🔄
-
-   - Given the current count in the state is 1
-   - When a "RESET" action is dispatched
-   - Then the state should display a count
 
 ## How to Use 🚀
 
